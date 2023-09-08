@@ -4,13 +4,15 @@ main(){
 	for(i=1;i<=10;i++){
 			printf("Enter the value : ");
 			scanf("%d",&arr[i]);}
-			for(i=1;i<=10;i++){
+		for(i=1;i<=10;i++){
 			if(arr[i]%2==0)
 			{
 				even++;
 				even_total+=arr[i];
 				printf("\t \t \t The Even Number is : %d \n",arr[i]);
-			}else{
+			}
+		}for(i=1;i<=10;i++){
+			if(arr[i]%2!=0){
 				odd++;
 				odd_total+=arr[i];
 				printf("The Odd Number is : %d \n",arr[i]);
