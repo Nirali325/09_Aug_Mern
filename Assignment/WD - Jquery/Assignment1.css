@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.container {
+    width: 850px;
+    margin: 150px auto;
+    overflow: auto;
+}
+
+
+.slider-inner{
+    width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    border: 5px solid #333;
+}
+
+
+.slider-inner img{
+    display: none;
+    width: 800px;
+    height: 400px;
+}
+
+.slider-inner img.active{
+    display: inline-block;
+}
+
+.prev, .next{
+    float: left;
+    margin-top: 170px;
+    cursor: pointer;
+}
+
+.prev{
+    position: relative;
+    margin-right: -45px;
+    z-index: 100;
+}
+
+.next{
+    position: relative;
+    margin-left: -45px;
+    z-index: 100;
+}
