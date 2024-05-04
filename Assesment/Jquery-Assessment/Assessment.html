@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <title>Password Strength Checker</title>
+</head>
+
+<body>
+    <h1 class="title"></h1>
+    <div class="container">
+        <form action="" novalidate>
+            <div class="form-control"  style="width: 400px;">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" id="password" class="input password" placeholder="*********"
+                    required>
+                <span id="pswToggler" class="psw-visibilty" title="Toggle to view or hide password">View</span>
+                <div id="strengthBar"></div>
+            </div>
+            <!-- <div class="form-control">
+                <label for="rPassword" class="form-label">Repeat Password</label>
+                <input type="password" name="rPassword" id="rPassword" class="input r-password" placeholder="*********">
+                <span id="rPswToggler" class="psw-visibilty" title="Toggle to view or hide password">View</span>
+                <div id="rPasswordTip"></div>
+            </div> -->
+
+            <button type="submit" id="submitBtn">Check Details</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
