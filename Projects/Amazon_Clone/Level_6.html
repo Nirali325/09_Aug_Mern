@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level_6</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        li{
+            list-style-type: none;
+        }
+        ul{
+            background-color: plum;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .outer{
+            height: 400px;
+            width: 400px;
+            background-color:powderblue ;
+            display: flex;
+            justify-content: center; 
+            /* horizontally main axis means row wish (adu) center ma lave */
+            align-items: center;
+            /* vertically cross axis means column wish (ubhu) center ma lave */
+            /* align-items container ma use thay e individul nathi to eni prayority align-self pachi ave  */
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color:skyblue ;
+            border: 1px solid darkblue;
+        }
+
+    </style>
+</head>
+<body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+</body>
+</html>
