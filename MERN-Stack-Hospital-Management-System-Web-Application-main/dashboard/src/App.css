@@ -7,10 +7,17 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #3939d9f2;
+  background: #F4F8FC;
+  color: #0F1F3D;
 }
 .container {
   padding: 0 100px;
+}
+.logo{
+  display: flex;
+  align-items: center; /* vertically center the logo */
+  justify-content: center; /* horizontally center if needed */
+  height: 200px; /* fixed height for header */
 }
 @media (max-width: 700px) {
   .container {
@@ -22,8 +29,8 @@ body {
   background: #e5e5e5;
   padding: 40px;
   height: 100vh;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 @media (max-width: 1208px) {
   .page {
@@ -38,7 +45,7 @@ body {
 }
 @media (max-width: 460px) {
   .logo {
-    width: 100%;
+    width:100%;
   }
 }
 .form-title{
@@ -51,7 +58,6 @@ body {
   padding-bottom: 60px;
   min-height: 100vh;
   background: #e5e5e5;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -110,7 +116,7 @@ body {
   border-radius: 8px;
   font-size: 24px;
   margin-bottom: 30px;
-  background: linear-gradient(140deg, #9083d5, #271776ca);
+  background: linear-gradient(140deg, #00CFFF, #007BFF);
 }
 .form-component .wrapper {
   display: flex;
@@ -213,6 +219,8 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 12px;
+  background: linear-gradient(140deg, #00CFFF, #007BFF); /* matching gradient */
+  color: #fff;
 }
 .dashboard .banner:first-child .secondBox p,
 .dashboard .banner:first-child .thirdBox p {
@@ -342,7 +350,7 @@ body {
 .sidebar {
   position: fixed;
   width: 120px;
-  background: transparent;
+  background: #007BFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -359,8 +367,8 @@ body {
   font-size: 34px;
 }
 .sidebar svg:hover {
-  background: #fff;
-  color: #3939d9f2;
+  background: #00CFFF;
+  color: #fff;
   border-radius: 8px;
   transition: 0.3s;
   cursor: pointer;
@@ -416,7 +424,7 @@ body {
 }
 
 .doctors h1 {
-  color: #3939d9f2;
+  color: #007BFF;
   margin-bottom: 30px;
   font-size: 2.3rem;
 }
@@ -426,7 +434,7 @@ body {
   grid-gap: 20px;
 }
 .doctors .banner .card {
-  background: #fff;
+  background: #E6F2FF;
   border-radius: 12px;
   padding: 20px;
   display: flex;
@@ -467,7 +475,7 @@ body {
 }
 
 .messages h1 {
-  color: #3939d9f2;
+  color: #007BFF;
   margin-bottom: 30px;
   font-size: 2.3rem;
 }
@@ -477,7 +485,7 @@ body {
   gap: 20px;
 }
 .messages .banner .card {
-  background: #fff;
+  background: #E6F2FF;
   border-radius: 12px;
   padding: 20px;
 }
@@ -554,7 +562,7 @@ body {
   border-radius: 8px;
   font-size: 24px;
   margin-bottom: 30px;
-  background: linear-gradient(140deg, #9083d5, #271776ca);
+  background: linear-gradient(140deg, #00CFFF, #007BFF);
 }
 @media (max-width: 945px) {
   .add-doctor-form form .first-wrapper {

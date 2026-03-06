@@ -10,7 +10,7 @@ const AppointmentForm = () => {
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("");
   const [appointmentDate, setAppointmentDate] = useState("");
-  const [department, setDepartment] = useState("Pediatrics");
+  const [department, setDepartment] = useState("");
   const [address, setAddress] = useState("");
   const [hasVisited, setHasVisited] = useState(false);
 
@@ -124,13 +124,21 @@ const AppointmentForm = () => {
         </div>
 
         <div>
-          <select value={department} onChange={(e) => setDepartment(e.target.value)}>
-            {departmentsArray.map((depart, index) => (
-              <option value={depart} key={index}>
-                {depart}
-              </option>
-            ))}
-          </select>
+          <select
+                value={department}
+                onChange={(e) => {
+                  setDepartment(e.target.value);
+                }}
+              >
+                <option value="">Select Department</option>
+                {departmentsArray.map((depart, index) => {
+                  return (
+                    <option value={depart} key={index}>
+                      {depart}
+                    </option>
+                  );
+                })}
+              </select>
         </div>
 
         <textarea
